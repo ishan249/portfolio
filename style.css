@@ -1,17 +1,16 @@
 html {
     scroll-behavior: smooth;
 }
-
 .firstSection{
   font-family: 'Albert Sans';
   text-align: center;
-  padding:120px;
-  height:420px;
-  /* border:2px black solid; */
+  padding:10px;
+  height:320px;
 }
 .mainName{
-  font-size: 85px;
+  font-size: 65px;
   font-weight: bold;
+  
 }
 .name{
   background-color: #4158D0;
@@ -23,8 +22,8 @@ html {
 
 
 .tagLine{
-  font-size: 26px;
-  padding: 10px;
+  font-size: 24px;
+  padding:10px;
 }
 
 .nav-link {
@@ -50,22 +49,20 @@ a {
 }
 .secondSection{
     margin: 18px;
-    /* border: 2px black solid; */
 }
 .subHeading{
   font-weight: bold;
-  font-size: 42px;
+  font-size: 38px;
   margin-top: 35px;
 }
 .myIntro{
   padding:15px;
   font-family: 'Albert sans';
-  /* font-size: 22px; */
   text-align:center;
 }
 .myIntroText{
   padding:15px;
-  font-size: 26px;
+  font-size: 20px;
 }
 .myTechStack{
   font-size: 18px;
@@ -84,27 +81,33 @@ a {
 }
 .techIcons{
   width:38px;
-  height: 38px;
+  height:38px;
 }
 .techtext{
   font-family: 'Albert sans';
-  font-size: 24px;
+  font-size: 20px;
 }
 .techs{
-  margin: 30px;
+  margin: 40px 20px;
 }
 
 .techGrp1{
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 .techGrp2{
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+
 }
 .thirdSection{
   font-family: 'Albert sans';
   text-align: center;
+}
+.navbar-toggler{
+  color: black;
 }
 a{
   text-decoration: none;
@@ -151,7 +154,7 @@ a{
       padding: 17px;
       width: 600px;
       margin: 10px;
-      font-size: 24px;
+      font-size: 22px;
 }
 .hashNodeText{
   font-size: 30px;

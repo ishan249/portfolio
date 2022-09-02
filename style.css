@@ -10,7 +10,7 @@ html {
 .mainName{
   font-size: 65px;
   font-weight: bold;
-  
+
 }
 .name{
   background-color: #4158D0;
@@ -28,6 +28,7 @@ html {
 
 .nav-link {
     font-family: 'Albert Sans';
+    margin-left: 5px;
 }
 
 .nav-link:hover {
@@ -45,6 +46,7 @@ a {
   border-radius:7px;
   height: 32px;
   width: 70px;
+  margin-left: 5px;
   margin-top: 3px;
 }
 .secondSection{
@@ -140,9 +142,10 @@ a{
   margin: 5px;
 }
 #projectBtn{
-  margin:10px;
+  margin:15px;
   font-size: 20px;
   height: 40px;
+
 }
 .fourthSection{
   font-family: 'Albert sans';
@@ -228,7 +231,7 @@ a{
   border: none;
   outline: none;
   background: transparent;
-  color: white;
+  color: black;
   cursor: pointer;
   padding: 10px;
   border-radius:50%;

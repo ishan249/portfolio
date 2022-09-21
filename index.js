@@ -40,3 +40,10 @@ function goTohashBillBlog(){
 function goToResume(){
   window.open("https://drive.google.com/file/d/12098w89ep2mmemnWzHR6j7GF1Fubed3N/view?usp=sharing","_blank");
 }
+function goToRedditSite(){
+  window.open("https://best-of-reddit.vercel.app/","_blank");
+}
+function goToRedditHashBlog(){
+  window.open("https://ishanpatel.hashnode.dev/web-scraping-using-cheerio-in-nodejs","_blank");
+
+}

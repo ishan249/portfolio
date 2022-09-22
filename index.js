@@ -38,7 +38,7 @@ function goTohashBillBlog(){
              "https://ishanpatel.hashnode.dev/learn-javascript-dom", "_blank");
 }
 function goToResume(){
-  window.open("https://drive.google.com/file/d/12098w89ep2mmemnWzHR6j7GF1Fubed3N/view?usp=sharing","_blank");
+  window.open("https://drive.google.com/file/d/1MTdSt9EPfrXqpvMAAKVVfix7uc9w4L7j/view?usp=sharing","_blank");
 }
 function goToRedditSite(){
   window.open("https://best-of-reddit.vercel.app/","_blank");

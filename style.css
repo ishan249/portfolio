@@ -1,229 +1,271 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-.firstSection{
-  font-family: 'Albert Sans';
-  text-align: center;
-  padding:10px;
-  height:320px;
+.Navbar {
+  background-color: white;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: black;
 }
-.mainName{
-  font-size: 65px;
+.Navbar__Link-brand {
   font-weight: bold;
+  font-size: 35px;
+  font-family: "Albert Sans";
+}
+.Navbar__Link {
+  margin: 10px 14px;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+a:hover{
+  text-decoration: underline;
+  color: black;
 
 }
-.name{
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  color:transparent;
+a {
+  font-family: "Albert Sans";
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+  .Navbar__Link {
+    margin: 8px 2px;
+  }
+  .Firstlink {
+    margin-top: 15px;
+  }
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+}
+.firstSection {
+  font-family: "Albert Sans";
+  text-align: center;
+  padding: 10px;
+  height: 320px;
+}
+.mainName {
+  font-size: 65px;
+  font-weight: bold;
+}
+.name {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-
-
-
-.tagLine{
+.tagLine {
   font-size: 24px;
-  padding:10px;
+  padding: 10px;
 }
-
-.nav-link {
-    font-family: 'Albert Sans';
-    margin-left: 5px;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
-}
-a {
-    text-decoration: none;
-}
-.resumeBtn{
+.resumeBtn {
   width: 90px;
   color: white;
-  background-color:#007FFF;
-  border:none;
-  border-radius:7px;
+  background-color: #007fff;
+  border: none;
+  border-radius: 7px;
   height: 32px;
   width: 70px;
   margin-left: 5px;
   margin-top: 3px;
 }
-.secondSection{
-    margin: 18px;
+.secondSection {
+  margin: 18px;
 }
-.subHeading{
+.subHeading {
   font-weight: bold;
   font-size: 38px;
   margin-top: 35px;
 }
-.myIntro{
-  padding:15px;
-  font-family: 'Albert sans';
-  text-align:center;
+.myIntro {
+  padding: 15px;
+  font-family: "Albert sans";
+  text-align: center;
 }
-.myIntroText{
-  padding:15px;
+.myIntroText {
+  padding: 15px;
   font-size: 20px;
 }
-.myTechStack{
+.myTechStack {
   font-size: 18px;
-  padding:15px;
-  font-family: 'Albert sans';
-  text-align:center;
+  padding: 15px;
+  font-family: "Albert sans";
+  text-align: center;
 }
-.technology{
+.technology {
   /* justify-content: center;
   display: flex; */
 }
-.technology1{
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.technology1 {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   justify-content: center;
   display: flex;
 }
-.techIcons{
-  width:38px;
-  height:38px;
+.techIcons {
+  width: 38px;
+  height: 38px;
 }
-.techtext{
-  font-family: 'Albert sans';
+.techtext {
+  font-family: "Albert sans";
   font-size: 20px;
 }
-.techs{
+.techs {
   margin: 40px 20px;
 }
 
-.techGrp1{
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.techGrp2{
+.techGrp1 {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-
 }
-.thirdSection{
-  font-family: 'Albert sans';
+.techGrp2 {
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.thirdSection {
+  font-family: "Albert sans";
   text-align: center;
 }
-.navbar-toggler{
-  color: black;
-}
-a{
-  text-decoration: none;
-}
-.box{
+.box {
   margin: 40px;
   width: 340px;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   border-radius: 8px;
 }
-.subHeadings{
+.subHeadings {
   font-weight: bolder;
   font-size: 25px;
   margin-top: 10px;
 }
-.projectImg{
+.projectImg {
   height: 180px;
   width: 310px;
   border-radius: 8px;
-  margin:10px;
+  margin: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.projectContent{
-  font-family: 'Albert sans';
+.projectContent {
+  font-family: "Albert sans";
   font-size: 20px;
   padding: 25px;
   margin: 5px;
 }
-#projectBtn{
-  margin:15px;
+#projectBtn {
+  margin: 15px;
   font-size: 20px;
   height: 40px;
 }
-.fourthSection{
-  font-family: 'Albert sans';
+.fourthSection {
+  font-family: "Albert sans";
   text-align: center;
 }
-.firstBlog{
-      text-align: center;
-      height: 320px;
-      padding: 17px;
-      width: 600px;
-      margin: 10px;
-      font-size: 22px;
+.firstBlog {
+  text-align: center;
+  height: 320px;
+  padding: 17px;
+  width: 600px;
+  margin: 10px;
+  font-size: 22px;
 }
-.hashNodeText{
+.hashNodeText {
   font-size: 30px;
   font-weight: bolder;
   margin-top: 10px;
 }
-.fifthSection{
+.fifthSection {
   background-color: #002244;
   height: 180px;
 }
 .socialAccounts {
-    padding: 15px;
+  padding: 15px;
 }
-.socialImages1{
+.socialImages1 {
   height: 45px;
-  margin-top:20px;
+  margin-top: 20px;
   width: 45px;
-   transition:width 0.5s, height 0.5s,  background-color 0.5s, transform 0.5s;
+  transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
-.socialImages1:hover{
+.socialImages1:hover {
   height: 55px;
   width: 55px;
-
 }
-.socialImages2{
+.socialImages2 {
   height: 45px;
-  margin-top:20px;
+  margin-top: 20px;
   /* border: 1px white solid; */
   width: 45px;
-  transition:width 0.5s, height 0.5s,  background-color 0.5s, transform 0.5s;
-
+  transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
-.socialImages2:hover{
+.socialImages2:hover {
   height: 55px;
   width: 55px;
-
 }
-.socialImages3{
+.socialImages3 {
   height: 45px;
-  margin-top:20px;
+  margin-top: 20px;
   /* border: 1px white solid; */
   width: 45px;
-  transition:width 0.5s, height 0.5s,  background-color 0.5s, transform 0.5s;
-
+  transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
-.socialImages3:hover{
+.socialImages3:hover {
   height: 55px;
   width: 55px;
-
 }
-.socialImages4{
+.socialImages4 {
   height: 45px;
-  margin-top:20px;
+  margin-top: 20px;
   /* border: 1px white solid; */
   width: 45px;
-  transition:width 0.5s, height 0.5s,  background-color 0.5s, transform 0.5s;
-
+  transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
-.socialImages4:hover{
+.socialImages4:hover {
   height: 55px;
   width: 55px;
-
 }
 #myBtn {
-
-  align:right;
+  align: right;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -234,27 +276,44 @@ a{
   color: black;
   cursor: pointer;
   padding: 10px;
-  border-radius:50%;
+  border-radius: 50%;
   font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }

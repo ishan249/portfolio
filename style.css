@@ -1,12 +1,27 @@
 html {
   scroll-behavior: smooth;
 }
+@media only screen and (min-width: 768px){
+  .mainBody{
+    width: 860px;
+  }
+  .mainDiv{
+    display: flex;
+    justify-content: center;
+  }
+}
+#navigation{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  margin: 8px 14px;
+  border-radius: 12px;
+}
 .Navbar {
   background-color: white;
   display: flex;
   padding: 16px;
   font-family: sans-serif;
   color: black;
+
 }
 .Navbar__Link-brand {
   font-weight: bold;
@@ -14,7 +29,7 @@ html {
   font-family: "Albert Sans";
 }
 .Navbar__Link {
-  margin: 10px 14px;
+  margin: 12px 14px;
 }
 
 .Navbar__Items {
@@ -28,12 +43,12 @@ html {
 .Navbar__Link-toggle {
   display: none;
 }
-a:hover{
+.Navbar__Link:hover{
   text-decoration: underline;
   color: black;
 
 }
-a {
+.Navbar__Link {
   font-family: "Albert Sans";
   text-decoration: none;
   color: black;
@@ -42,8 +57,9 @@ a {
   .Navbar__Items,
   .Navbar {
     flex-direction: column;
+ 
   }
-
+  
   .Navbar__Items {
     display: none;
   }
@@ -66,18 +82,21 @@ a {
     display: initial;
     position: absolute;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 10px;
   }
+ 
 }
 .firstSection {
   font-family: "Albert Sans";
-  text-align: center;
+  /* text-align: center; */
   padding: 10px;
-  height: 320px;
+  margin: 30px 5px;
+  /* height: 320px; */
 }
 .mainName {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: bold;
+  text-align: center;
 }
 .name {
   background-color: #4158d0;
@@ -93,8 +112,8 @@ a {
 }
 
 .tagLine {
-  font-size: 24px;
-  padding: 10px;
+  font-size: 20px;
+  margin-top: 6px;
 }
 .resumeBtn {
   width: 90px;
@@ -135,10 +154,11 @@ a {
   display: flex; */
 }
 .technology1 {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 }
 .techIcons {
   width: 38px;
@@ -149,18 +169,10 @@ a {
   font-size: 20px;
 }
 .techs {
-  margin: 40px 20px;
-}
-
-.techGrp1 {
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.techGrp2 {
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
+  background-color: rgb(227, 227, 227);
+  margin: 30px 20px;
+  padding:14px;
+  border-radius: 10px;
 }
 .thirdSection {
   font-family: "Albert sans";
@@ -176,11 +188,11 @@ a {
 .subHeadings {
   font-weight: bolder;
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .projectImg {
   height: 180px;
-  width: 310px;
+  width: 320px;
   border-radius: 8px;
   margin: 10px;
   margin-top: 10px;
@@ -188,9 +200,10 @@ a {
 }
 .projectContent {
   font-family: "Albert sans";
-  font-size: 20px;
-  padding: 25px;
+  font-size: 18px;
+  padding: 20px;
   margin: 5px;
+  height: 160px;
 }
 #projectBtn {
   margin: 15px;

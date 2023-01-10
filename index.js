@@ -39,7 +39,7 @@ function goTohashBillBlog() {
 }
 function goToResume() {
   window.open(
-    "https://drive.google.com/file/d/1MTdSt9EPfrXqpvMAAKVVfix7uc9w4L7j/view?usp=sharing",
+    "https://drive.google.com/file/d/1Mse9ITrCNStC9F3VYbgVDYSBd8tzU4o4/view?usp=share_link",
     "_blank"
   );
 }
@@ -52,7 +52,12 @@ function goToRedditHashBlog() {
     "_blank"
   );
 }
-
+function goToHangoutCode() {
+  window.open("https://github.com/ishan249/Hangout-Adviser", "_blank");
+}
+function goToHangoutBlog() {
+  window.open("https://ishanpatel.hashnode.dev/how-to-use-serp-api-for-google-data-in-reactjs", "_blank");
+}
 function classToggle() {
   const navs = document.querySelectorAll(".Navbar__Items");
 
@@ -62,3 +67,8 @@ function classToggle() {
 document
   .querySelector(".Navbar__Link-toggle")
   .addEventListener("click", classToggle);
+
+
+const date = new Date();
+const year = date.getFullYear();
+document.getElementById("copyrightYear").innerHTML= year;
